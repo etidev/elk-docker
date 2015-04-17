@@ -80,6 +80,6 @@ RUN chown logstash:logstash /opt/logstash/patterns/*
 ADD ./start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
-EXPOSE 5601 9200 5000
+EXPOSE 5601 9200 5000 5960
 
 CMD [ "/usr/local/bin/start.sh" ]
