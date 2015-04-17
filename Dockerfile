@@ -66,7 +66,7 @@ ADD ./logstash-forwarder.crt /etc/pki/tls/certs/logstash-forwarder.crt
 ADD ./logstash-forwarder.key /etc/pki/tls/private/logstash-forwarder.key
 
 # filters
-ADD ./logstash.conf /etc/logstash/conf.d/logstash.conf
+ADD ./logstash.conf /etc/logstash/conf.d/01-logstash.conf
 
 # patterns
 ADD ./nginx.pattern /opt/logstash/patterns/nginx
