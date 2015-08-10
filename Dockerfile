@@ -64,6 +64,7 @@ ADD ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 RUN mkdir -p /etc/pki/tls/certs && mkdir /etc/pki/tls/private
 ADD ./logstash-forwarder.crt /etc/pki/tls/certs/logstash-forwarder.crt
 ADD ./logstash-forwarder.key /etc/pki/tls/private/logstash-forwarder.key
+ADD ./logstash-CentralELK.crt /etc/pki/tls/certs/logstash-CentralELK.crt
 
 # filters
 ADD ./logstash.conf /etc/logstash/conf.d/01-logstash.conf
